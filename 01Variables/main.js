@@ -78,3 +78,25 @@ console.log(myDog);
 
 // Esto es probablemente lo que harás la mayor parte del tiempo, ya que es más rápido que hacer las dos acciones en dos líneas separadas.
 
+// Una nota sobre var #008000
+// Probablemente también verá una forma diferente de declarar variables, utilizando la palabra clave var:
+
+var myName2;
+
+// Cuando se creó JavaScript por primera vez, esta era la única forma de declarar variables. El diseño de var es confuso y error - propenso. Entonces let fue creado en versiones modernas de JavaScript, una nueva palabra clave para crear variables que funciona de manera algo diferente a var, arreglando sus problemas en el proceso.
+
+// A continuación se explican un par de diferencias simples.
+
+// Para empezar, si escribe un programa JavaScript multilínea que declara e inicializa una variable, puede declarar una variable con var después de inicializarlo y seguirá funcionando. Por ejemplo:
+
+myName3 = "Chris";
+
+console.log(myName3);
+
+var myName3;
+
+// Nota: Esto no funcionará al escribir líneas individuales en una consola de JavaScript, solo cuando se ejecutan varias líneas de JavaScript en un documento web.
+
+// Esto funciona gracias al hoisting --- leer https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#var_hoisting para más detalles sobre el tema.
+
+// El hoisting ya no funciona con let. Si cambiamos var a let en el ejemplo anterior, fallaría con un error. Esto es algo bueno — declarar una variable después de inicializarla resulta en un código confuso y más difícil de entender.
