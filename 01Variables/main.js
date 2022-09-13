@@ -100,3 +100,36 @@ var myName3;
 // Esto funciona gracias al hoisting --- leer https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#var_hoisting para más detalles sobre el tema.
 
 // El hoisting ya no funciona con let. Si cambiamos var a let en el ejemplo anterior, fallaría con un error. Esto es algo bueno — declarar una variable después de inicializarla resulta en un código confuso y más difícil de entender.
+
+// En segundo lugar, cuando usas var, puede declarar la misma variable tantas veces como desee, pero con let no puedes. Lo siguiente funcionaría:
+
+var myName4 = "Juan";
+var myName4 = "Hector";
+
+console.log(myName4);
+
+// Pero lo siguiente arrojaría un error en la segunda línea:
+
+// let myName5 = "Chris";
+// let myName5 = "Bob"; // Uncaught SyntaxError: Identifier 'myName5' has already been declared (at main.js:114:5)
+
+// Tendrías que hacer esto en su lugar:
+
+let myName6 = "Chris";
+myName6 = "Bob";
+
+console.log(myName6);
+
+// Nuevamente, esta es una decisión sensata del lenguaje. No hay ninguna razón para canjear variables —, solo hace las cosas más confusas.
+
+// Por estas razones y más, le recomendamos que use let en su código, en lugar de var. No hay razón para usar var, a menos que necesite admitir Internet Explorer 10 o anterior con su código.
+
+// Nota: Si está probando este código en la consola de su navegador, prefiera copiar y pegar cada uno de los bloques de código aquí en su conjunto. Hay un característica en la consola de Chrome donde las declaraciones variables - con let y const están permitidos:
+
+// > let myName = 'Chris';
+//   let myName = 'Bob';
+// As one input: SyntaxError: Identifier 'myName' has already been declared
+
+// > let myName = 'Chris';
+// > let myName = 'Bob';
+// As two inputs: both succeed
