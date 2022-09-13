@@ -36,3 +36,26 @@ buttonB.onclick = () => {
 
 // Nota: Decimos que las variables contienen valores. Esta es una distinción importante que hacer. Las variables no son los valores en sí mismos; son contenedores de valores. Puedes pensar en ellos como pequeñas cajas de cartón en las que puedes guardar cosas.
 
+// Declarar una variable #008000
+// Para usar una variable, primero debe crearla; de manera más precisa, llamamos a esto declarar la variable. Para ello, escribimos la palabra clave let seguida del nombre con el que queremos llamar a nuestra variable:
+
+let myName;
+let myAge;
+
+// Aquí estamos creando dos variables llamadas myName y myAge. Intente escribir estas líneas en la consola de su navegador web. Después de eso, intente crear una variable (o dos) con sus propias opciones de nombre.
+
+// Nota: En JavaScript, todas las instrucciones de código deben terminar con un punto y coma (;): el código puede funcionar correctamente para líneas individuales, pero probablemente no lo hará cuando escriba varias líneas de código juntas. Trate de adquirir el hábito de incluirlo.
+
+// Puede probar si estos valores existen ahora en el entorno de ejecución escribiendo solo el nombre de la variable, por ejemplo.
+
+myName;
+
+// Actualmente no tienen valor; son contenedores vacíos. Al introducir los nombres de las variables, debe obtener un valor de undefined devuelto. Si no existen, recibirás un mensaje de error: intenta escribir
+
+console.log(myName); // Undefined
+
+// scobyDoo; // Uncaught ReferenceError: ScobyDoo is not defined
+
+// #FF0000
+// Nota: No confundas una variable que existe pero no tiene un valor definido con una variable que no existe en absoluto, son cosas muy diferentes. En la analogía de la caja que viste anteriormente, no existir significaría que no hay una caja (variable) para que entre un valor. Ningún valor definido significaría que hay una caja, pero no tiene valor dentro de ella.
+
