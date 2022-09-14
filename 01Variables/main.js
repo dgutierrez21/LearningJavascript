@@ -140,3 +140,43 @@ console.log(myName6);
 myName7 = "Bob"; // Cambie el valor de esta variable cuantas veces quiera
 myAge7 = 40; // Cambie el valor de esta variable cuantas veces quiera
 
+// // Una nota sobre las reglas de denominación de las variables: #008000
+// Puede llamar a una variable casi todo lo que quiera, pero hay limitaciones. En general, debe seguir usando solo caracteres latinos ( 0 - 9, a - z, A - Z ) y el carácter de subrayado.
+
+// No debe usar otros personajes porque pueden causar errores o ser difíciles de entender para una audiencia internacional.
+
+// No use guiones bajos al comienzo de los nombres de variables —, esto se usa en ciertas construcciones de JavaScript para significar cosas específicas, por lo que puede ser confuso.
+
+// No use números al comienzo de las variables. Esto no está permitido y causa un error.
+
+// Una convención segura a la que se apega se llama así - "caja de camello inferior", donde se mantienen juntas varias palabras, usando minúsculas para toda la primera palabra y luego capitalizan las palabras posteriores. Hemos estado usando esto para nuestros nombres de variables en el artículo hasta ahora.
+
+// Haga que los nombres de variables sean intuitivos, para que describan los datos que contienen. No solo use letras / números individuales o frases largas grandes.
+
+// Las variables son sensibles a mayúsculas y minúsculas —, por lo que myage es una variable diferente de myAge.
+
+// Un último punto: también debe evitar usar palabras reservadas de JavaScript como sus nombres de variables — con esto, ¡nos referimos a las palabras que componen la sintaxis real de JavaScript! Entonces, no puedes usar palabras como var, function, let, y for como nombres de variables. Los navegadores los reconocen como diferentes elementos de código, por lo que obtendrá errores.
+
+// Nota: Puede encontrar una lista bastante completa de palabras clave reservadas para evitar en https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords
+
+// Buenos ejemplos de nombres:
+
+// age
+// myAge
+// init
+// initialColor
+// finalOutputValue
+// audio1
+// audio2
+
+// Ejemplos de mal nombre:
+
+// 1
+// a
+// _12
+// myage
+// MYAGE
+// var
+// Document
+// skjfndskjfnbdskjfb
+// thisisareallylongvariablenameman
