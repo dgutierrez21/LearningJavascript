@@ -321,3 +321,14 @@ console.log(bird.species);
 // Usa const cuando puedas, y usa let cuando tengas que hacerlo.
 
 // Esto significa que si puede inicializar una variable cuando la declara y no necesita reasignarla más tarde, conviértala en una constante.
+
+// Resumen
+// Podemos declarar variables para almacenar datos utilizando las palabras clave var, let o const.
+
+// let – es una declaración de variable moderna.
+
+// var – es una declaración variable de la vieja escuela. Normalmente no lo usamos en absoluto, pero cubriremos las diferencias sutiles de let en el capítulo El viejo "var", en caso de que los necesites.
+
+// const – es como let, pero el valor de la variable no se puede cambiar.
+
+// Las variables deben nombrarse de una manera que nos permita comprender fácilmente lo que hay dentro de ellas.
