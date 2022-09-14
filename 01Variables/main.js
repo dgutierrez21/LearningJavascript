@@ -332,3 +332,53 @@ console.log(bird.species);
 // const – es como let, pero el valor de la variable no se puede cambiar.
 
 // Las variables deben nombrarse de una manera que nos permita comprender fácilmente lo que hay dentro de ellas.
+
+// Pon a prueba tus habilidades #008000
+
+// Variables 1
+// En esta tarea queremos que:
+
+// Declarar una variable llamada myName.
+// Inicializar myName con un valor adecuado, en una línea separada ( puede usar su nombre real, o algo más ).
+// Declarar una variable llamada myAge e inicializarlo con un valor, en la misma línea.
+
+let myName8;
+
+myName8 = "Jhon Doe";
+
+let myAge8 = 25;
+
+console.log(myName8);
+console.log(myAge8);
+
+// Variables 2
+// En esta tarea, debe agregar una nueva línea para corregir el valor almacenado en el existente myName variable a tu propio nombre.
+
+let myName9 = "Paul"; // Variable existente en el ejercicio
+
+myName9 = "Juan";
+
+console.log(myName9);
+
+// Variables 3
+// La tarea final por ahora — en este caso se le proporciona algún código existente, que tiene dos errores presentes en él. El panel de resultados debe emitir el nombre Chris, y una declaración sobre cuántos años tendrá Chris dentro de 20 años. ¿Cómo puede solucionar el problema y corregir la salida?
+
+// Codigo existente
+
+// const myName10 = "Default";
+// myName10 = "Chris"; // Uncaught TypeError: Assignment to constant variable.
+
+// let myAge10 = "42";
+
+// console.log(myName10);
+// console.log(`In 20 years, I will be ${myAge10 + 20}`); // the output is not the desired value
+
+// solución
+
+let myName10 = "Default";
+myName10 = "Chris";
+
+let myAge10 = 42;
+
+console.log(myName10);
+console.log(`In 20 years, I will be ${myAge10 + 20}`);
