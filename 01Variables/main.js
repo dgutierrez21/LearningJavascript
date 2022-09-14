@@ -180,3 +180,72 @@ myAge7 = 40; // Cambie el valor de esta variable cuantas veces quiera
 // Document
 // skjfndskjfnbdskjfb
 // thisisareallylongvariablenameman
+
+// Tipos de variables #008000
+
+// Hay algunos tipos diferentes de datos que podemos almacenar en variables. En esta sección describiremos estos en breve, luego en futuros artículos, aprenderá sobre ellos con más detalle.
+
+// Hasta ahora hemos visto los dos primeros, pero hay otros.
+
+// Números
+// Puede almacenar números en variables, ya sea números enteros como 30 (también llamados enteros) o números decimales como 2.456 (también llamados flotadores o números de coma flotante). No es necesario declarar tipos de variables en JavaScript, a diferencia de otros lenguajes de programación. Cuando le das a una variable un valor numérico, no incluyes comillas:
+
+let num1 = 17;
+console.log(num1);
+
+// Cadenas
+// Las cadenas son fragmentos de texto. Cuando se le da a una variable un valor de cadena, es necesario envolverla entre comillas simples o dobles; de lo contrario, JavaScript intenta interpretarlo como otro nombre de variable.
+
+let goodBye = "Bye, see you later";
+
+console.log(goodBye);
+
+// Booleanos
+// Los booleanos son valores verdaderos/falsos: pueden tener dos valores, true o false. Estos generalmente se usan para probar una condición, después de lo cual el código se ejecuta según corresponda. Así, por ejemplo, un caso simple sería:
+
+let iAmLearningJavascript = true;
+
+console.log(iAmLearningJavascript);
+
+// Mientras que en realidad se usaría más así:
+
+let test = 6 < 3;
+
+console.log(test);
+
+// Esto es usar el operador "menos que" (<) para probar si 6 es menor que 3. Como era de esperar, devuelve false, ¡porque 6 no es menos de 3!
+
+// Matrices
+// Una matriz es un objeto único que contiene varios valores entre corchetes y separados por comas. Intente introducir las siguientes líneas en la consola:
+
+let myNameArray = ["Chris", "Bob", "Jim"];
+
+let myNumberArray = [5, 10, 15];
+// Una vez definidas estas matrices, puede acceder a cada valor por su ubicación dentro de la matriz. Pruebe estas líneas:
+
+console.log(myNameArray);
+
+console.log(myNameArray[0]);
+
+console.log(myNumberArray);
+
+console.log(myNumberArray[2]);
+
+// Los corchetes especifican un valor de índice correspondiente a la posición del valor que desea devolver. Es posible que haya notado que las matrices en JavaScript tienen índice cero: el primer elemento está en el índice 0.
+
+// Objetos
+// En programación, un objeto es una estructura de código que modela un objeto de la vida real. Puede tener un objeto simple que represente un cuadro y contenga información sobre su ancho, longitud y altura, o puede tener un objeto que represente a una persona y contenga datos sobre su nombre, altura, peso, qué idioma habla, cómo saludarlos y más.
+
+// Intente introducir la siguiente línea en la consola:
+
+let car = {
+  brand: "Mclaren",
+  model: "720s",
+  motor: "v8",
+  performance: "0 to 100 km/h (62 mph) in 2.9 seconds",
+};
+
+// Para recuperar la información almacenada en el objeto, puede utilizar la sintaxis siguiente:
+
+console.log(car.motor);
+console.log(car.performance);
