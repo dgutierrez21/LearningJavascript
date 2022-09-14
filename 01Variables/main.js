@@ -249,3 +249,24 @@ let car = {
 
 console.log(car.motor);
 console.log(car.performance);
+
+// Escritura dinámica #008000
+
+// JavaScript es un "lenguaje de tipo dinámico", lo que significa que, a diferencia de otros lenguajes, no es necesario especificar qué tipo de datos contendrá una variable (números, cadenas, matrices, etc.).
+
+// Por ejemplo, si declara una variable y le da un valor entre comillas, el explorador trata la variable como una cadena:
+
+let myString = "Hello";
+console.log(myString);
+
+// Incluso si el valor entre comillas es solo dígitos, sigue siendo una cadena, no un número, así que tenga cuidado:
+
+let myNumber = "720"; // oops, esto sigue siendo una cadena
+
+console.log(typeof myNumber);
+
+myNumber = 650; // mucho mejor - ahora esto es un número
+
+console.log(typeof myNumber);
+
+// Intente ingresar las cuatro líneas anteriores en su consola una por una y vea cuáles son los resultados. Notarás que estamos usando un operador especial llamado typeof, que devuelve el tipo de datos de la variable que escribes después de él. La primera vez que se llama, debe devolver string, ya que en ese momento la variable myNumber contiene una cadena, '500'. Echa un vistazo y mira lo que devuelve la segunda vez que lo llamas.
