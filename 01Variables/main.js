@@ -133,3 +133,10 @@ console.log(myName6);
 // > let myName = 'Chris';
 // > let myName = 'Bob';
 // As two inputs: both succeed
+
+// Actualizando una variable #008000
+// Una vez que una variable se ha inicializado con un valor, puede cambiar ( o actualizar ) ese valor dándole un valor diferente. Intente ingresar las siguientes líneas en su consola:
+
+myName7 = "Bob"; // Cambie el valor de esta variable cuantas veces quiera
+myAge7 = 40; // Cambie el valor de esta variable cuantas veces quiera
+
