@@ -382,3 +382,25 @@ let myAge10 = 42;
 
 console.log(myName10);
 console.log(`In 20 years, I will be ${myAge10 + 20}`);
+
+// ¿Const mayúsculas? #008000
+
+// Examine el código siguiente:
+
+// const birthday = '18.04.1982';
+
+// const age = someCode(birthday);
+
+// Aquí tenemos una fecha de birthday constante y la age se calcula a partir del birthday con la ayuda de algún código (no se proporciona por brevedad, y porque los detalles no importan aquí).
+
+// ¿Sería correcto usar mayúsculas para el birthday? ¿Para age? ¿O incluso para ambos?
+
+// const BIRTHDAY = '18.04.1982'; // make uppercase?
+
+// const AGE = someCode(BIRTHDAY); // make uppercase?
+
+// Generalmente usamos mayúsculas para las constantes que están "codificadas". O, en otras palabras, cuando el valor se conoce antes de la ejecución y se escribe directamente en el código.
+
+// En este código, birthday es exactamente así. Así que podríamos usar la mayúscula para ello.
+
+// Por el contrario, la age se evalúa en tiempo de ejecución. Hoy tenemos una edad, un año después tendremos otra. Es constante en el sentido de que no cambia a través de la ejecución del código. Pero es un poco "menos constante" que el birthday: está calculado, por lo que debemos mantener la minúscula para ello.
