@@ -17,3 +17,18 @@ console.log(foo);
 foo = true; // foo es ahora un booleano
 
 console.log(foo);
+
+// Tipos de datos en Javascript #008000
+// El conjunto de tipos en el lenguaje JavaScript consiste en valores y objetos primitivos.
+
+// valores primitivos (dato inmutable representado directamente en el nivel más bajo del lenguaje):
+
+// Boolean type
+// Null type
+// Undefined type
+// Number type
+// BigInt type
+// String type
+// Symbol type
+
+// Objects (colecciones de propiedades)
