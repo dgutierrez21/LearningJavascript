@@ -163,3 +163,197 @@ console.log(foo);
 
 // Determinar tipos usando el typeof operador #008000
 // los typeof el operador puede ayudarlo a encontrar el tipo de su variable.
+
+// Ejemplos tipos y estructura de datos #008000
+
+// El concepto de tipos de datos
+// En programación, los tipos de datos son un concepto importante.
+
+// Para poder operar sobre variables, es importante saber algo sobre el tipo.
+
+// Sin tipos de datos, una computadora no puede resolver esto de manera segura:
+
+let x = 16 + "Volvo";
+
+console.log(x); //16Volvo
+
+// ¿Tiene algún sentido añadir "Volvo" a los dieciséis? ¿Producirá un error o producirá un resultado?
+
+// JavaScript tratará el ejemplo anterior como:
+
+let x2 = "16" + "Volvo";
+
+console.log(x2); // 16Volvo
+
+// Al agregar un número y una cadena, JavaScript tratará el número como una cadena.
+
+// JavaScript evalúa las expresiones de izquierda a derecha. Diferentes secuencias pueden producir diferentes resultados:
+
+let x3 = 15 + 5 + "Volvo";
+
+console.log(x3); // 20Volvo
+
+let x4 = "Volvo" + 15 + 5;
+
+console.log(x4); //Volvo155
+
+// En el primer ejemplo, JavaScript trata 15 y 5 como números, hasta que llega a "Volvo".
+
+// En el segundo ejemplo, dado que el primer operando es una cadena, todos los operandos se tratan como cadenas.
+
+// Los tipos de JavaScript son dinámicos
+// JavaScript tiene tipos dinámicos. Esto significa que la misma variable se puede utilizar para contener diferentes tipos de datos:
+
+let x5; //Ahora x5 es undefined
+
+console.log(x5);
+
+x5 = 5; // ahora x5 es un numero
+
+console.log(x5);
+
+x5 = "Jhon"; // ahora x5 es una cadena
+
+console.log(x5);
+
+// Cadenas de JavaScript
+// Una cadena (o una cadena de texto) es una serie de caracteres como "John Doe".
+
+// Las cadenas se escriben entre comillas. Puedes usar comillas simples o dobles:
+
+let carName1 = "Volvo"; // usando comillas dobles
+
+console.log(carName1);
+
+let carName2 = "Ferrari"; // usando comillas simples
+
+console.log(carName2);
+
+// Puede usar comillas dentro de una cadena, siempre que no coincidan con las comillas que rodean la cadena:
+
+let answer = "It's alright";
+
+console.log(answer);
+
+let answer1 = "he is called 'johnny'";
+
+console.log(answer1);
+
+let answer2 = 'he is called "johnny"';
+
+console.log(answer2);
+
+// Números de JavaScript
+// JavaScript solo tiene un tipo de números.
+
+// Los números se pueden escribir con o sin decimales:
+
+let x6 = 34.55; // Escrito con decimales
+
+let x7 = 33; // Escrito sin decimales
+
+console.log(x6);
+console.log(x7);
+
+// Los números extra grandes o extra pequeños se pueden escribir con notación científica (exponencial):
+
+let x8 = 123e5; //12300000
+
+let x9 = 123e-5; // 0.00123
+
+console.log(x8);
+console.log(x9);
+
+// Los booleanos solo pueden tener dos valores: true o false.
+
+// Los booleanos se utilizan a menudo en pruebas condicionales.
+
+let x10 = 5;
+
+let x11 = 10;
+
+console.log(x10 < x11); // true
+console.log(x10 > x11); // false
+console.log(x10 === x11); // false
+
+// Matrices javascript
+// Las matrices de JavaScript se escriben entre corchetes.
+
+// Los elementos de la matriz están separados por comas.
+
+// El siguiente código declara (crea) una matriz llamada cars, que contiene tres elementos (nombres de coches):
+
+// Los índices de matriz se basan en cero, lo que significa que el primer elemento es [0], el segundo es [1], y así sucesivamente.
+
+const cars = ["Audi", "Mclaren", "Ferrari"];
+
+console.log(cars);
+
+// Objetos JavaScript
+// Los objetos JavaScript se escriben con llaves rizadas {}.
+
+// Las propiedades de objeto se escriben como pares name:value, separados por comas.
+
+const person = {
+  firtName: "Juan",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "Blue",
+};
+
+// El objeto (persona) del ejemplo anterior tiene 4 propiedades: firstName, lastName, age y eyeColor.
+
+console.log(person);
+
+// El tipo de operador
+// Puede utilizar el operador typeof JavaScript para encontrar el tipo de variable de JavaScript.
+
+// El typeof devuelve el tipo de una variable o una expresión:
+
+let num = 11;
+
+const person2 = {
+  firstName: "Pedro",
+  age: 25,
+};
+
+let name1 = "Juan";
+
+console.log(typeof num);
+console.log(typeof person2);
+console.log(typeof name1);
+
+// Indefinido
+// En JavaScript, una variable sin un valor, tiene el valor undefined. El tipo también es undefined.
+
+let name2;
+
+console.log(name2);
+
+// Cualquier variable se puede vaciar estableciendo el valor undefined. El tipo también será undefined.
+
+let und = undefined;
+
+console.log(und);
+
+// Valores vacíos
+// Un valor vacío no tiene nada que ver con undefined.
+
+// Una cadena vacía tiene un valor legal y un tipo.
+
+let car5 = "";
+console.log(car5);
+
+// NaN
+// Definición y uso
+// En JavaScript, NaN es la abreviatura de "Not - a - Number".
+
+// En JavaScript, NaN es un número que no es un número legal.
+
+// El global NaN la propiedad es igual a la Number.NaN propiedad.
+
+let message = "hello";
+
+let num10 = 10;
+
+console.log(num10 - message);
