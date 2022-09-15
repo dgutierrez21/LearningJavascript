@@ -83,3 +83,6 @@ let num4 = 36;
 // Tenga en cuenta que lo que importa es el orden en el que se ejecuta el código
 // no el orden en el que está escrito en el archivo de origen. El código se ejecutará correctamente siempre que la línea que inicializa la variable se ejecute antes que cualquier línea que la lea.
 
+// Hoisting de clases #008000
+
+// Las clases definidas mediante una declaración de clase se elevan, lo que significa que JavaScript tiene una referencia a la clase. Sin embargo, la clase no se inicializa de forma predeterminada, por lo que cualquier código que la utilice antes de que se ejecute la línea en la que se inicializa generará un ReferenceError.
