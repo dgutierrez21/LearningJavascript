@@ -51,3 +51,5 @@ console.log(y); // resultado: 1
 }
 
 console.log(a); // Uncaught ReferenceError: a is not defined
+
+// https://jstutorial.medium.com/the-visual-guide-to-javascript-variable-definitions-scope-abfb86edad
