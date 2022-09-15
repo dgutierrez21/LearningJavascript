@@ -92,3 +92,5 @@ let num4 = 36;
 // Las expresiones de función y las expresiones de clase no se elevan.
 
 // Las expresiones se evalúan a una función o clase (respectivamente). Por lo general, se asignan a una variable o se pasan a otras funciones. En este caso, la declaración de la variable se eleva y la expresión es su inicialización. Por lo tanto, las expresiones no se evalúan hasta que se ejecuta la línea correspondiente.
+
+// https://dev.to/lydiahallie/javascript-visualized-hoisting-478hF
