@@ -161,3 +161,5 @@ console.log(foo);
 
 // Por favor, eche un vistazo a la referencia para obtener más información sobre más objetos.
 
+// Determinar tipos usando el typeof operador #008000
+// los typeof el operador puede ayudarlo a encontrar el tipo de su variable.
