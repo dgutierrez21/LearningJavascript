@@ -86,3 +86,9 @@ let num4 = 36;
 // Hoisting de clases #008000
 
 // Las clases definidas mediante una declaración de clase se elevan, lo que significa que JavaScript tiene una referencia a la clase. Sin embargo, la clase no se inicializa de forma predeterminada, por lo que cualquier código que la utilice antes de que se ejecute la línea en la que se inicializa generará un ReferenceError.
+
+// Hoisting de expresiones de funciones y expresiones de clases #008000
+
+// Las expresiones de función y las expresiones de clase no se elevan.
+
+// Las expresiones se evalúan a una función o clase (respectivamente). Por lo general, se asignan a una variable o se pasan a otras funciones. En este caso, la declaración de la variable se eleva y la expresión es su inicialización. Por lo tanto, las expresiones no se evalúan hasta que se ejecuta la línea correspondiente.
