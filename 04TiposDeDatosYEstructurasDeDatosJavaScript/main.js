@@ -83,3 +83,81 @@ console.log(foo);
 // Tipo Symbol
 
 // Un símbolo es un valor primitivo único e inmutable y se puede utilizar como clave de una propiedad Object (véase más adelante). En algunos lenguajes de programación, los símbolos se llaman "átomos".
+
+// Objects #008000
+// En informática, un objeto es un valor en la memoria al que posiblemente se hace referencia mediante un identificador..
+
+// En JavaScript, los objetos se pueden ver como una colección de propiedades. Con la sintaxis literal del objeto, se inicializa un conjunto limitado de propiedades; luego se pueden agregar y eliminar propiedades. Los valores de propiedad pueden ser valores de cualquier tipo, incluidos otros objetos, lo que permite crear estructuras de datos complejas. Las propiedades se identifican mediante valores clave. Un valor de clave es un valor String o un valor Symbol.
+
+// Hay dos tipos de propiedades de objeto: la propiedad data y la propiedad accessor. Cada propiedad tiene los atributos correspondientes.
+
+// Propiedad Data
+// Las propiedades de datos asocian una clave a un valor. Se puede describir mediante los siguientes atributos:
+
+// value
+// El valor recuperado por un get access de la propiedad. Puede ser cualquier valor de JavaScript.
+
+// writable
+// Valor booleano que indica si la propiedad se puede cambiar con una asignación.
+
+// enumerable
+// Un valor booleano que indica si la propiedad puede ser enumerada por un for...in bucle. Consulte también Enumerabilidad y propiedad de propiedades para saber cómo interactúa la enumerabilidad con otras funciones y sintaxis.
+
+// configurable
+// Un valor booleano que indica si la propiedad se puede eliminar, se puede cambiar a una propiedad accesoria y se pueden cambiar sus atributos.
+
+// Propiedad Accessor
+// Asocia una clave con una de las dos funciones de descriptor de get y set) para recuperar o almacenar un valor.
+
+// Nota: Es importante reconocer su propiedad de accesorio, no su método de accesorio. Podemos dar a un objeto JavaScript descriptores de acceso similares a una clase usando una función como valor, pero eso no hace que el objeto sea una clase.
+
+// Una propiedad accessor tiene los siguientes atributos:
+
+// get
+// Función a la que se llama con una lista de argumentos vacía para recuperar el valor de la propiedad cada vez que se realiza un acceso obtentor al valor. Véase también getters. Puede ser undefined.
+
+// set
+// Función llamada con un argumento que contiene el valor asignado. Se ejecuta cada vez que se intenta cambiar una propiedad especificada. Véase también setters. Puede ser undefined.
+
+// enumerable
+// Un valor booleano que indica si la propiedad puede ser enumerada por un for...in bucle. Consulte también Enumerabilidad y propiedad de propiedades para saber cómo interactúa la enumerabilidad con otras funciones y sintaxis.
+
+// configurable
+// Un valor booleano que indica si la propiedad se puede eliminar, se puede cambiar a una propiedad de datos y se pueden cambiar sus atributos.
+
+// Objetos y funciones "normales"
+// Un objeto JavaScript es una asignación entre claves y valores. Las claves son cadenas (o símbolos), y los valores pueden ser cualquier cosa. Esto hace que los objetos sean un ajuste natural para hashmaps..
+
+// Las funciones son objetos regulares con la capacidad adicional de ser invocables.
+
+// Fechas
+// Al representar fechas, la mejor opción es usar la utilidad Date incorporada en JavaScript.
+
+// Colecciones indexadas: Arrays and typed Arrays
+
+// Las matrices son objetos regulares para los que existe una relación particular entre las propiedades de clave entera y la propiedad length.
+
+// Además, las matrices heredan de Array.prototype, que les proporciona un puñado de métodos convenientes para manipular matrices. Por ejemplo, indexOf() (buscar un valor en la matriz) o push() (agregar un elemento a la matriz), etc. Esto hace que Arrays sea un candidato perfecto para representar listas o conjuntos.
+
+// Las matrices con tipo presentan una vista similar a una matriz de un búfer de datos binario subyacente y ofrecen muchos métodos que tienen una semántica similar a las contrapartes de la matriz. "Matriz tipada" es un término general para una variedad de estructuras de datos, incluidas Int8Array, Float32Array, etc. Consulte la página de matriz con tipo para obtener más información.
+
+// Colecciones con claves: Maps, Sets, WeakMaps, WeakSets
+
+// Estas estructuras de datos toman referencias de objetos como claves. Set y WeakSet representan un conjunto de objetos, mientras que Map y WeakMap asocian un valor a un objeto.
+
+// La diferencia entre Maps y WeakMaps es que en el primero, las claves de objeto se pueden enumerar. Esto permite optimizaciones de recolección de basura en este último caso.
+
+// Puede implementar Maps y Sets usted mismo. Sin embargo, dado que los objetos no se pueden comparar (en el sentido de < "menos que", por ejemplo), ni el motor expone su función hash para los objetos, el rendimiento de búsqueda sería necesariamente lineal. Las implementaciones nativas de ellos (incluido WeakMaps) pueden tener un rendimiento de búsqueda que es aproximadamente logarítmico a tiempo constante.
+
+// Por lo general, para enlazar datos a un nodo DOM, se pueden establecer propiedades directamente en el objeto o usar atributos data-*. Esto tiene la desventaja de que los datos están disponibles para cualquier script que se ejecute en el mismo contexto. Maps y WeakMaps facilitan el enlace privado de datos a un objeto.
+
+// Datos estructurados: JSON
+// JSON (JavaScript Object Notation) es un formato ligero de intercambio de datos, derivado de JavaScript, pero utilizado por muchos lenguajes de programación. JSON construye estructuras de datos universales.
+
+// Consulte JSON y JSON para obtener más detalles.
+
+// Más objetos en la biblioteca estándar
+// JavaScript tiene una biblioteca estándar de objetos integrados.
+
+// Por favor, eche un vistazo a la referencia para obtener más información sobre más objetos.
+
