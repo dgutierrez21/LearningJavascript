@@ -220,3 +220,56 @@ const browser3 = "Opera";
 console.log(browser3[browser3.length - 1]);
 
 // La longitud de la cadena "Opera" es 5, pero debido a que el recuento comienza en 0, la posición del último carácter es 4; usando length-1 nos da el último carácter.
+
+// Probar si una cadena contiene una subcadena #008000
+// A veces querrás averiguar si una cadena más pequeña está presente dentro de una más grande (generalmente decimos si una subcadena está presente dentro de una cadena). Esto se puede hacer utilizando el método includes() que toma un solo parámetro: la subcadena que desea buscar.
+
+// Devuelve true si la cadena contiene la subcadena false en caso contrario.
+
+const browser4 = "Microsoft Edge";
+
+let wordToSearch = "Edge";
+
+let browser4Result = browser4.includes(wordToSearch);
+
+console.log(browser4Result);
+
+if (browser4Result) {
+  console.log(`The word ${wordToSearch} has been found`);
+} else {
+  console.log(`the word ${wordToSearch} has NOT been found`);
+}
+
+// A menudo querrá saber si una cadena comienza o termina con una subcadena en particular. Esta es una necesidad lo suficientemente común como para que haya dos métodos especiales para esto: startsWith() y endsWith():
+
+const browser5 = "Safari";
+
+let wordToSearchStart2 = "Saf",
+  wordToSearchEnd2 = "ari";
+
+const browser5ResultStart = browser5.startsWith(wordToSearchStart2),
+  browser5ResultEnd = browser5.endsWith(wordToSearchEnd2);
+
+console.log(browser5ResultStart);
+
+if (browser5ResultStart) {
+  console.log(
+    `The string ${browser5} if it begins with the word ${wordToSearchStart2}`
+  );
+} else {
+  console.log(
+    `The string ${browser5} does NOT begin with the word ${wordToSearchStart2}`
+  );
+}
+
+console.log(browser5ResultEnd);
+
+if (browser5ResultEnd) {
+  console.log(
+    `The string ${browser5} if it ends with the word ${wordToSearchEnd2}`
+  );
+} else {
+  console.log(
+    `The string ${browser5} does NOT end with the word ${wordToSearchEnd2}`
+  );
+}
