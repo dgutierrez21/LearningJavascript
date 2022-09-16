@@ -160,3 +160,22 @@ const output = `I like the song ${song}. I gave it a score of ${
 }%`;
 
 console.log(output);
+
+// Cadenas multilínea #008000
+// Los literales de plantilla respetan los saltos de línea en el código fuente, por lo que puede escribir cadenas que abarquen varias líneas como esta:
+
+const output2 = `I like the song.
+I gave a score of 90%.
+I like the song.
+I like the song.
+I like the song.
+`;
+
+console.log(output2);
+
+// Para tener la salida equivalente usando una cadena normal, tendría que incluir caracteres de salto de línea (\n) en la cadena:
+
+const output3 =
+  "I like the song.\nI gave a score of 90%.\nI gave a score of 90%.\nI gave a score of 90%.";
+
+console.log(output3);
