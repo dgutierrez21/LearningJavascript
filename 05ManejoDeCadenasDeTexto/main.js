@@ -194,3 +194,13 @@ const string3 = "This is my string";
 // Ahora, antes de que tu cerebro comience a derretirse, ¡no te preocupes! Realmente no necesita saber sobre la mayoría de estos al principio de su viaje de aprendizaje. Pero hay algunos que potencialmente usará con bastante frecuencia que veremos aquí.
 
 // Introduzcamos algunos ejemplos en la consola del desarrollador del navegador.
+
+// Búsqueda de la longitud de una cadena #008000
+// Esto es fácil: se utiliza la propiedad length. Intente introducir las siguientes líneas:
+
+const browserType = "mozilla";
+
+console.log(browserType.length);
+
+// Esto debería devolver el número 7, porque "mozilla" tiene 7 caracteres. Esto es útil por muchas razones; por ejemplo, es posible que desee buscar las longitudes de una serie de nombres para que pueda mostrarlos en orden de longitud, o informar a un usuario de que un nombre de usuario que ha introducido en un campo de formulario es demasiado largo si tiene más de una longitud determinada.
+
