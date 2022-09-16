@@ -67,3 +67,55 @@ console.log(dblSgl);
 
 // Esto funciona bien. Puedes escapar de otros personajes de la misma manera, p. \", y hay algunos códigos especiales además. Ver Secuencias de escape para más detalles.
 
+// Concatenar cadenas #008000
+// Concatenar solo significa "unirse". Para unir cadenas en JavaScript, puede usar un tipo diferente de cadena, llamado literal de plantilla.
+
+// Un literal de plantilla se parece a una cadena normal, pero en lugar de usar comillas simples o dobles (' o "), se usan caracteres de retroceso (`):
+
+const templateLiteral = `Hello`;
+
+// Esto puede funcionar igual que una cadena normal, excepto que puede incluir variables en ella, envueltas dentro de caracteres ${ }, y el valor de la variable se insertará en el resultado:
+
+const name1 = `Chris`;
+
+const greeting = `Hello, My name is ${name1}`;
+
+console.log(greeting);
+
+// Puede utilizar la misma técnica para unir dos variables:
+
+const one = "Hello, ";
+const two = "how are you?";
+
+const joined = `${one}${two}`;
+
+console.log(joined);
+
+// Concatenación en contexto
+// Echemos un vistazo a la concatenación que se utiliza en acción:
+
+const button1 = document.querySelector(".btn1");
+
+function great() {
+  const name = prompt("What is your name?");
+  alert(`Hello ${name}, nice to see you!`);
+}
+
+button1.addEventListener("click", great);
+
+// Aquí estamos usando la función window.prompt() que le pide al usuario que responda una pregunta a través de un cuadro de diálogo emergente y luego almacena el texto que ingresa dentro de una variable determinada, en este caso name. Luego usamos la función window.alert() para mostrar otra ventana emergente que contiene una cadena que inserta el nombre en un mensaje de saludo genérico.
+
+// Concatenación usando "+"
+// También puede concatenar cadenas utilizando el operador +:
+
+const greeting2 = "Hello";
+const name2 = "Chris";
+
+console.log(greeting2 + " " + name2);
+
+// Sin embargo, los literales de plantilla generalmente le dan código más legible:
+
+const greeting3 = "Hello";
+const name3 = "Juan";
+
+console.log(`${greeting3} ${name3}`);
