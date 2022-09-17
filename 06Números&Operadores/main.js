@@ -141,3 +141,30 @@ console.log(num2 + num1 / 8 + 2);
 console.log((num2 + num1) / (8 + 2));
 
 // NOTA: Se puede encontrar una lista completa de todos los operadores de JavaScript y su precedencia en https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#operator_precedence
+
+// Operadores de incremento y decremento. #008000
+// A veces, querrá sumar o restar repetidamente uno hacia o desde un valor de variable numérico. Esto se puede hacer convenientemente usando el incremento (++) y decremento (--Operadores ). Nosotros usamos ++ en nuestro juego "Adivina el número" en nuestro primer salpicadura en JavaScript artículo, cuando agregamos 1 a nuestro guessCount variable para realizar un seguimiento de cuántas conjeturas le queda al usuario después de cada turno.
+
+// guessCount++;
+// Intentemos jugar con estos en su consola. Para empezar, tenga en cuenta que no puede aplicarlos directamente a un número, lo que puede parecer extraño, pero estamos asignando a una variable un nuevo valor actualizado, que no funciona con el valor en sí. Lo siguiente devolverá un error:
+
+// console.log(3++);
+
+// Entonces, solo puede incrementar una variable existente. Prueba esto:
+
+let num3 = 4;
+num3++;
+
+console.log(num3);
+
+// ¡Está bien, extrañeza número 2! Cuando haga esto, verá un valor de 4 devuelto, esto se debe a que el navegador devuelve el valor actual y luego incrementa la variable. Puede ver que se ha incrementado si devuelve el valor de la variable nuevamente:
+
+// Lo mismo ocurre con -- : pruebe lo siguiente
+
+let num4 = 8;
+num4--;
+num4;
+
+console.log(num4);
+
+// Nota: Puede hacer que el navegador lo haga al revés (incrementar / disminuir la variable y luego devolver el valor) colocando el operador al principio de la variable en lugar del final. Pruebe los ejemplos anteriores de nuevo, pero esta vez use ++num1 y --num2.
