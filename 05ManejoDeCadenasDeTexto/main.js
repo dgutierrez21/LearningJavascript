@@ -447,7 +447,7 @@ for (const city of cities) {
 // 5. Cambie el valor de la variable de result a la cadena final, no a la station.
 
 const list3 = document.querySelector(".ul_3");
-list.innerHTML = "";
+list3.innerHTML = "";
 const stations = [
   "MAN675847583748sjt567654;Manchester Piccadilly",
   "GNF576746573fhdg4737dh4;Greenfield",
