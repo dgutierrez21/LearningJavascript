@@ -321,3 +321,13 @@ console.log(browser6.slice(4));
 // Esto devuelve "lla": esto se debe a que la posición del carácter de 4 es la letra "l" y debido a que no incluyó un segundo parámetro, la subcadena que se devolvió fue todos los caracteres restantes de la cadena.
 
 // Nota: slice() también tiene otras opciones; estudie la página slice() para ver qué más puede averiguar.
+
+// Cambio de caso #008000
+// Los métodos de cadena toLowerCase() y toUpperCase() toman una cadena y convierten todos los caracteres en minúsculas o mayúsculas, respectivamente. Esto puede ser útil, por ejemplo, si desea normalizar todos los datos introducidos por el usuario antes de almacenarlos en una base de datos.
+
+// Intentemos ingresar las siguientes líneas para ver qué sucede:
+
+const radData = "My NaMe Is MuD";
+
+console.log(radData.toLowerCase());
+console.log(radData.toUpperCase());
