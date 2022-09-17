@@ -331,3 +331,32 @@ const radData = "My NaMe Is MuD";
 
 console.log(radData.toLowerCase());
 console.log(radData.toUpperCase());
+
+// Actualización de partes de una cadena #008000
+// Puede reemplazar una subcadena dentro de una cadena por otra subcadena mediante el método replace()).
+
+// En este ejemplo, proporcionamos dos parámetros: la cadena que queremos reemplazar y la cadena con la que queremos reemplazarla:
+
+const browser7 = "Mozilla";
+
+const updated = browser7.replace("Moz", "Van");
+
+console.log(browser7);
+console.log(updated);
+
+// Tenga en cuenta que replace(), al igual que muchos métodos de cadena, no cambia la cadena a la que se llamó, sino que devuelve una nueva cadena. Si desea actualizar la variable browserType original, tendría que hacer algo como esto:
+
+let browser8 = "Mozilla";
+browser8 = browser8.replace("Moz", "Van");
+
+console.log(browser8);
+
+// También tenga en cuenta que ahora tenemos que declarar browserType usando let, no const, porque lo estamos reasignando.
+
+// Tenga en cuenta que replace() en este formulario solo cambia la primera aparición de la subcadena. Si desea cambiar todas las apariciones, puede utilizar replaceAll():
+
+let quote = "To be or not to be";
+
+quote = quote.replaceAll("be", "code");
+
+console.log(quote);
