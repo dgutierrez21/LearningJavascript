@@ -360,3 +360,112 @@ let quote = "To be or not to be";
 quote = quote.replaceAll("be", "code");
 
 console.log(quote);
+
+// Ejemplos de aprendizaje activo #008000
+// En esta sección, le pediremos que pruebe a escribir código de manipulación de cadenas. En cada ejercicio a continuación, tenemos una matriz de cadenas y un bucle que procesa cada valor de la matriz y lo muestra en una lista con viñetas. No necesita comprender las matrices o bucles en este momento, estos se explicarán en artículos futuros. Todo lo que necesita hacer en cada caso es escribir el código que generará las cadenas en el formato en el que las queremos.
+
+// Cada ejemplo viene con un botón "Restablecer", que puede usar para restablecer el código si comete un error y no puede volver a funcionar, y un botón "Mostrar solución" que puede presionar para ver una posible respuesta si realmente se atasca.
+
+// Filtrado de mensajes de saludo
+// En el primer ejercicio, comenzaremos de manera simple: tenemos una variedad de mensajes de tarjetas de felicitación, pero queremos ordenarlos para enumerar solo los mensajes de Navidad. Queremos que completes una prueba condicional dentro de la estructura if () para probar cada cadena y solo imprimirla en la lista si es un mensaje de Navidad.
+
+// Piensa en cómo podrías probar si el mensaje en cada caso es un mensaje de Navidad. ¿Qué cadena está presente en todos esos mensajes y qué método podría usar para probar si está presente?
+
+const list = document.querySelector(".ul_1");
+list.innerHTML = "";
+const greetings = [
+  "Happy Birthday!",
+  "Merry Christmas my love",
+  "A happy Christmas to all the family",
+  "You're all I want for Christmas",
+  "Get well soon",
+];
+
+for (const greeting of greetings) {
+  // Your conditional test needs to go inside the parentheses
+  // in the line below, replacing what's currently there
+  if (greeting.includes("Christmas")) {
+    const listItem = document.createElement("li");
+    listItem.textContent = greeting;
+    list.appendChild(listItem);
+  }
+}
+
+// Fijación de mayúsculas
+// En este ejercicio, tenemos los nombres de las ciudades en el Reino Unido, pero la capitalización está desordenada. Queremos que los cambies para que estén todos en minúsculas, excepto una primera letra mayúscula. Una buena manera de hacerlo es:
+
+// 1. Convierta toda la cadena contenida en la variable city a minúsculas y guárdela en una nueva variable.
+
+// 2. Toma la primera letra de la cadena en esta nueva variable y guárdala en otra variable.
+
+// 3. Usando esta última variable como subcadena, reemplace la primera letra de la cadena minúscula por la primera letra de la cadena minúscula cambiada a mayúscula. Almacene el resultado de este procedimiento de reemplazo en otra variable nueva.
+
+// 4. Cambie el valor de la variable result a igual al resultado final, no a la city.
+
+// Nota: Una sugerencia: los parámetros de los métodos de cadena no tienen que ser literales de cadena; también pueden ser variables, o incluso variables con un método invocado en ellas.
+
+const list2 = document.querySelector(".ul_2");
+list2.innerHTML = "";
+const cities = ["lonDon", "ManCHESTer", "BiRmiNGHAM", "liVERpoOL"];
+
+for (const city of cities) {
+  // write your code just below here
+
+  let cityToLowerCase = city.toLowerCase();
+  let cityToLowerCaseFirstLetter = cityToLowerCase.slice(0, 1);
+  let lowerUpper = cityToLowerCase.replace(
+    cityToLowerCaseFirstLetter,
+    cityToLowerCaseFirstLetter.toUpperCase()
+  );
+
+  let result = lowerUpper;
+
+  const finalResult = result;
+  const listItem = document.createElement("li");
+  listItem.textContent = finalResult;
+  list2.appendChild(listItem);
+}
+
+// Hacer nuevas cuerdas a partir de piezas antiguas
+// En este último ejercicio, la matriz contiene un montón de cadenas que contienen información sobre las estaciones de tren en el norte de Inglaterra. Las cadenas son elementos de datos que contienen el código de estación de tres letras, seguido de algunos datos legibles por máquina, seguido de un punto y coma, seguido del nombre de la estación legible por humanos. Por ejemplo:
+
+// MAN675847583748sjt567654;Manchester Piccadilly
+
+// Queremos extraer el código y el nombre de la estación, y ponerlos juntos en una cadena con la siguiente estructura:
+
+// MAN: Manchester Piccadilly
+
+// Recomendamos hacerlo así:
+// 1. Extraiga el código de estación de tres letras y guárdelo en una nueva variable.
+
+// 2. Busque el número de índice de caracteres del punto y coma.
+
+// 3. Extraiga el nombre de la estación legible por humanos utilizando el número de índice de caracteres de punto y coma como punto de referencia y guárdelo en una nueva variable.
+
+// 4. Concatenar las dos nuevas variables y una cadena literal para hacer la cadena final.
+
+// 5. Cambie el valor de la variable de result a la cadena final, no a la station.
+
+const list3 = document.querySelector(".ul_3");
+list.innerHTML = "";
+const stations = [
+  "MAN675847583748sjt567654;Manchester Piccadilly",
+  "GNF576746573fhdg4737dh4;Greenfield",
+  "LIV5hg65hd737456236dch46dg4;Liverpool Lime Street",
+  "SYB4f65hf75f736463;Stalybridge",
+  "HUD5767ghtyfyr4536dh45dg45dg3;Huddersfield",
+];
+
+for (const station of stations) {
+  // write your code just below here
+
+  let stationCode = station.slice(0, 3),
+    index = station.indexOf(";"),
+    stationName = station.slice(index + 1),
+    finalString = `${stationCode}: ${stationName}`;
+
+  const result = finalString;
+  const listItem = document.createElement("li");
+  listItem.textContent = result;
+  list3.appendChild(listItem);
+}
