@@ -168,3 +168,34 @@ num4;
 console.log(num4);
 
 // Nota: Puede hacer que el navegador lo haga al revés (incrementar / disminuir la variable y luego devolver el valor) colocando el operador al principio de la variable en lugar del final. Pruebe los ejemplos anteriores de nuevo, pero esta vez use ++num1 y --num2.
+
+// Operadores de asignación #008000
+// Los operadores de asignación son operadores que asignan un valor a una variable. Ya hemos utilizado el más básico, =, cargas de veces: asigna a la variable de la izquierda el valor indicado a la derecha:
+
+let x = 3; // x contains the value 3
+
+// Pero hay algunos tipos más complejos, que proporcionan accesos directos útiles para mantener su código más ordenado y eficiente. Los más comunes se enumeran a continuación:
+
+// ver imagen...
+
+// Intente escribir algunos de los ejemplos anteriores en su consola, para tener una idea de cómo funcionan. En cada caso, vea si puede adivinar cuál es el valor antes de escribir la segunda línea.
+
+// Tenga en cuenta que puede usar felizmente otras variables en el lado derecho de cada expresión, por ejemplo:
+
+let y = 3;
+let z = 5;
+
+console.log(y);
+
+y *= z; // y contiene ahora el valor 15
+
+console.log(y);
+
+// ejemplo 2
+
+let x1 = 50;
+let z1 = 5;
+
+x1 += z1;
+
+console.log(x1);
